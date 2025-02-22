@@ -1,0 +1,1023 @@
+/*numero da nossa cor  #ff8c00;*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-wood-texture-white-wood-texture-background-picture-image_1465276.jpg');
+}
+
+header {
+  background-color:rgba(255, 255, 255, 0.566);
+  padding: 10px 0 ;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.284);
+}
+
+.container-img {
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*logo */
+img{
+  max-width: 27%;
+  height: auto;
+  
+}
+/*botao do menu*/
+.btn {
+  width: 130px;
+  height: 40px;
+  font-size: .9em;
+  cursor: pointer;
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  transition: all .4s;
+  text-wrap: none;
+ }
+ 
+ .btn:hover {
+  border-radius: 5px;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 -2px #ffc15c32;
+ }
+ 
+ .btn:active {
+  transition: all 0.2s;
+  transform: translate(-1px);
+  box-shadow: 0 1px 0 -2px #f2e0d2,
+   0 8px 0 -4px #e7d6c9,
+   0 12px 10px -3px #c8b9ae;
+ }
+
+/*aparti daqui é o codigo da barra de pesquisa */
+.container-input {
+  position: relative;
+  max-width: 30%;
+  padding: auto;
+}
+
+.input {
+  width: 200px;
+  height: 10px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 5px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 210px;
+}
+/*Estilo dos links*/
+a{
+  text-decoration: none;
+  color: #000000;
+}
+/*Parte das receitas finalmente*/
+main{
+  width: 90%;
+  box-shadow: 2px 5px 20px 5px rgba(99, 93, 93, 0.429);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+  margin: auto;
+}
+
+h1{
+  padding-top: 2%;
+}
+h1,h2{
+  color: #d87905;;
+}
+
+span{
+  color: red;
+}
+/*Titulo principal e img*/
+.div_1{
+  background-color: #ffffff2d;
+  backdrop-filter: blur(5px);
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  height: 500px;
+  border-bottom: 1.5px dashed #a19689;
+}
+/*card de imagem giratoria do começo*/
+.flip-card {
+  background-color: transparent;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+.flip-card-inner1 {
+  background-image: url('../img/cardapio/image1card.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 80%;
+  height: 390px;
+  text-align: center;
+  margin: auto;
+  transition: transform .6s;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner1 {
+  transform: scale(1.1);
+}
+.flip-card-inner2 {
+  background-image: url('../img/cardapio/image2card.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+  height: 390px;
+  transition: transform .6s;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner2 {
+  transform: scale(1.1);
+}
+.flip-card-inner3 {
+  background-image: url('../img/cardapio/image3card.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  max-width: 80%;
+  height: 370px;
+  text-align: center;
+  transition: transform .6s;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner3 {
+  transform: scale(1.1);
+}
+.flip-card-inner4 {
+  background-image: url('../img/cardapio/image4card.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 80%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner4 {
+  transform: scale(1.1);
+}
+.flip-card-inner5 {
+  background-image: url('../img/cardapio/image5card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner5 {
+  transform: scale(1.1);
+}
+.flip-card-inner6 {
+  background-image: url('../img/cardapio/image6card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner6 {
+  transform: scale(1.1);
+}
+.flip-card-inner7 {
+  background-image: url('../img/cardapio/image7card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner7 {
+  transform: scale(1.1);
+}
+.flip-card-inner8 {
+  background-image: url('../img/cardapio/image8card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner8 {
+  transform: scale(1.1);
+}
+.flip-card-inner9 {
+  background-image: url('../img/cardapio/image9card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner9 {
+  transform: scale(1.1);
+}
+.flip-card-inner10 {
+  background-image: url('../img/cardapio/image10card.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 390px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-inner10 {
+  transform: scale(1.1);
+}/*imagens de bebidas*/
+.flip-card-binner1 {
+  background-image: url('../img/cardapio/bebi1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner1 {
+  transform: scale(1.1);
+}
+.flip-card-binner2 {
+  background-image: url('../img/cardapio/bebi2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner2 {
+  transform: scale(1.1);
+}
+.flip-card-binner3 {
+  background-image: url('../img/cardapio/bebi3.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner3 {
+  transform: scale(1.1);
+}
+.flip-card-binner4 {
+  background-image: url('../img/cardapio/bebi4.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  max-width: 46%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner4 {
+  transform: scale(1.1);
+}
+.flip-card-binner5 {
+  background-image: url('../img/cardapio/bebi5.jpeg');
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 45%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner5 {
+  transform: scale(1.1);
+}
+.flip-card-binner6 {
+  background-image: url('../img/cardapio/bebi6.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner6 {
+  transform: scale(1.1);
+}
+.flip-card-binner7 {
+  background-image: url('../img/cardapio/bebi7.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner7 {
+  transform: scale(1.1);
+}
+.flip-card-binner8 {
+  background-image: url('../img/cardapio/bebi8.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner8 {
+  transform: scale(1.1);
+}
+.flip-card-binner9 {
+  background-image: url('../img/cardapio/bebi9.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 36%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner9 {
+  transform: scale(1.1);
+}
+.flip-card-binner10 {
+  background-image: url('../img/cardapio/bebi10.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-binner10 {
+  transform: scale(1.1);
+}
+/*doces*/
+.flip-card-dinner1 {
+  background-image: url('../img/cardapio/doce1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 70%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner1 {
+  transform: scale(1.1);
+}
+.flip-card-dinner2 {
+  background-image: url('../img/cardapio/doce2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner2 {
+  transform: scale(1.1);
+}
+.flip-card-dinner3 {
+  background-image: url('../img/cardapio/doce3.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner3 {
+  transform: scale(1.1);
+}
+.flip-card-dinner4 {
+  background-image: url('../img/cardapio/doce4.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner4 {
+  transform: scale(1.1);
+}
+.flip-card-dinner5 {
+  background-image: url('../img/cardapio/doce5.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner5 {
+  transform: scale(1.1);
+}
+.flip-card-dinner6 {
+  background-image: url('../img/cardapio/doce6.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 42%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner6 {
+  transform: scale(1.1);
+}
+.flip-card-dinner7 {
+  background-image: url('../img/cardapio/doce7.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner7 {
+  transform: scale(1.1);
+}
+.flip-card-dinner8 {
+  background-image: url('../img/cardapio/doce8.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 65%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner8 {
+  transform: scale(1.1);
+}
+.flip-card-dinner9 {
+  background-image: url('../img/cardapio/doce9.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 55%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner9 {
+  transform: scale(1.1);
+}
+.flip-card-dinner10 {
+  background-image: url('../img/cardapio/doce10.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-dinner10 {
+  transform: scale(1.1);
+}
+/*salada*/
+.flip-card-sinner1 {
+  background-image: url('../img/cardapio/salada1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 70%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner1 {
+  transform: scale(1.1);
+}
+.flip-card-sinner2 {
+  background-image: url('../img/cardapio/salada2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 55%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner2 {
+  transform: scale(1.1);
+}
+.flip-card-sinner3 {
+  background-image: url('../img/cardapio/salada3.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 80%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner3 {
+  transform: scale(1.1);
+}
+.flip-card-sinner4 {
+  background-image: url('../img/cardapio/salada4.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner4 {
+  transform: scale(1.1);
+}
+.flip-card-sinner5 {
+  background-image: url('../img/cardapio/salada5.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner5 {
+  transform: scale(1.1);
+}
+.flip-card-sinner6 {
+  background-image: url('../img/cardapio/salada6.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner6 {
+  transform: scale(1.1);
+}
+.flip-card-sinner7 {
+  background-image: url('../img/cardapio/salada7.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 70%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner7 {
+  transform: scale(1.1);
+}
+.flip-card-sinner8 {
+  background-image: url('../img/cardapio/salada8.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner8 {
+  transform: scale(1.1);
+}
+.flip-card-sinner9 {
+  background-image: url('../img/cardapio/salada9.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner9 {
+  transform: scale(1.1);
+}
+.flip-card-sinner10 {
+  background-image: url('../img/cardapio/salada10.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sinner10 {
+  transform: scale(1.1);
+}
+.flip-card-sginner1 {
+  background-image: url('../img/cardapio/salg1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 60%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner1 {
+  transform: scale(1.1);
+}
+.flip-card-sginner2 {
+  background-image: url('../img/cardapio/salg2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 45%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner2 {
+  transform: scale(1.1);
+}
+.flip-card-sginner3 {
+  background-image: url('../img/cardapio/salg3.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner3 {
+  transform: scale(1.1);
+}
+.flip-card-sginner4 {
+  background-image: url('../img/cardapio/salg4.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 385px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner4 {
+  transform: scale(1.1);
+}
+.flip-card-sginner5 {
+  background-image: url('../img/cardapio/salg5.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 45%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner5 {
+  transform: scale(1.1);
+}
+.flip-card-sginner6 {
+  background-image: url('../img/cardapio/salg6.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner6 {
+  transform: scale(1.1);
+}
+.flip-card-sginner7 {
+  background-image: url('../img/cardapio/salg7.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 45%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner7 {
+  transform: scale(1.1);
+}
+.flip-card-sginner8 {
+  background-image: url('../img/cardapio/salg8.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner8 {
+  transform: scale(1.1);
+}
+.flip-card-sginner9 {
+  background-image: url('../img/cardapio/salg9.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 50%;
+  height: 380px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner9 {
+  transform: scale(1.1);
+}
+.flip-card-sginner10 {
+  background-image: url('../img/cardapio/salg10.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 40%;
+  height: 388px;
+  transition: transform .6s;
+  margin: auto;
+  text-align: center;
+  transform-style:preserve-3d;
+}
+.flip-card:hover .flip-card-sginner10 {
+  transform: scale(1.1);
+}
+/*Fim do card de imagem giratoria do começo*/
+/*Ingredientes*/
+.div_2{
+  background-color: #ffffff2d;
+  backdrop-filter: blur(5px);
+  height: auto;
+  padding-left: 3%;
+  border-bottom: 1.5px dashed #a19689;
+}
+
+/*Modo de fazer*/
+.div_3{
+  background-color: #ffffff2d;
+  backdrop-filter: blur(5px);
+  height: auto;
+  padding-left: 3%;
+  border-bottom: 1.5px dashed #a19689;
+}
+/*Comi a div-4*/
+/*Tabela*/
+.div_5{
+  background-color: #ffffff2d;
+  backdrop-filter: blur(5px);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5px dashed #a19689;
+  justify-items: center;
+}
+/*Tutorial*/
+.div_6{
+  background-color: #ffffff2d;
+  backdrop-filter: blur(5px);
+  width: 90%;
+  margin: auto;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5px dashed #a19689;
+}
+
+/*Estilização completa da tabela*/
+.tabela-nutricional {
+  border-collapse: collapse; 
+  width: 85%;
+  margin: auto;
+  background-color: #ffffff46;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-nutricional caption {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tabela-nutricional th, .tabela-nutricional td {
+  border: 1px solid #ddd; 
+  padding: 10px;
+  text-align: center;
+}
+
+.tabela-nutricional th {
+  background-color: #ff8c00;;
+  color: white;
+  text-align: center;
+}
+/*Estilização completa da tabela*/
+/*Origem*/
+.div_7{
+  background-color: #ffffff2d;
+  backdrop-filter: blur(5px);
+  height: auto;
+  padding-left: 3%;
+  padding-bottom: 3%;
+}
+
+ul{
+  list-style-type:square ;
+}
+
+li{
+  padding: 8px;
+  padding-right: 5%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+p{
+  text-align: justify;
+  padding: 2px;
+  padding-right: 5%;
+  font-size: 20px;
+}
+

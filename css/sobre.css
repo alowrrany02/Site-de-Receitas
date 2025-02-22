@@ -1,0 +1,178 @@
+/*numero da nossa cor  #ff8c00;*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-wood-texture-white-wood-texture-background-picture-image_1465276.jpg');
+  }
+  
+  header {
+    background-color:rgba(255, 255, 255, 0.566);
+    padding: 10px 0 ;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.284);
+  }
+  
+  .container-img {
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*logo */
+  img{
+    max-width: 27%;
+    height: auto;
+    
+  }
+  /*botao do menu*/
+  .btn {
+    width: 130px;
+    height: 40px;
+    font-size: .9em;
+    cursor: pointer;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    text-wrap: none;
+   }
+   
+   .btn:hover {
+    border-radius: 5px;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 -2px #ffc15c32;
+   }
+   
+   .btn:active {
+    transition: all 0.2s;
+    transform: translate(-1px);
+    box-shadow: 0 1px 0 -2px #f2e0d2,
+     0 8px 0 -4px #e7d6c9,
+     0 12px 10px -3px #c8b9ae;
+   }
+  
+  
+  /*Estilo dos links*/
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+  /*Parte das receitas finalmente*/
+  main{
+    width: 90%;
+    box-shadow: 2px 5px 20px 5px rgba(99, 93, 93, 0.429);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    margin: auto;
+  }
+  
+  h1,h2{
+    padding-top: 2%;
+    color: #d87905;;
+  }
+  
+  span{
+    color: red;
+  }
+
+  .div_7{
+    background-color: #ffffff2d;
+    backdrop-filter: blur(5px);
+    height: auto;
+    padding-left: 3%;
+    padding-bottom: 3%;
+  }
+  
+  ul{
+    list-style-type:square ;
+  }
+  
+  li{
+    padding: 8px;
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 20px;
+  }
+  
+  p{
+    text-align: justify;
+    padding: 2px;
+    padding-right: 5%;
+    font-size: 20px;
+  }
+.card_social {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 10px;
+   
+  }
+  
+  .socialContainer {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
