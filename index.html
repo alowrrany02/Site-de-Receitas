@@ -11,8 +11,9 @@
 </head>
 <body>
     <header>
-        <div class="container-img"> <!--container da logo-->
-            <div class="img"><img onclick="imgclic()" src="img/icon/logo_principal.png" alt="Logo Rei da Cozinha"></div>
+        <div class="container-header"> 
+            <!--logo-->
+            <div class="img"></div>
             <!--container da pesquisa-->
             <div class="container-input">
                 <input type="text" placeholder="Pesquisar..." name="text" class="input">
@@ -20,22 +21,26 @@
                     <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
                 </svg>
             </div>
+            <!--html dos botoes do menu aqui-->
             <nav>
-                <!--html dos botoes do menu aqui-->
-                <button class="btn">
-                    <a href="index.html">Início</a>
-                </button>
-                <button class="btn"><a href="categorias.html">Categorias</a>
-                </button>
-                <button class="btn"><a href="sobre.html">Sobre</a>
-                </button>
+                <ul class="menu">
+                    <a class="btn" href="index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
             </nav>
         </div>
     </header>
 
   
-    <main>
-    <!-- partes dos card com fotos do index -->
+   <!-- <main>
+ 
         <div class="container">
             <div class="slides">
                 <input type="radio" name="r" id="radio1" checked>
@@ -65,8 +70,8 @@
                 </div>
             </div>
         </div>
-    </main>
-    <footer>&copy; @2025 -Todos os direitos reservados ao Rei da Cozinha</footer>
+    </main> 
+    <footer>&copy; @2025 -Todos os direitos reservados ao Rei da Cozinha</footer>-->
     <script>
         function imgclic(){
          window.location.href = "sobre.html"

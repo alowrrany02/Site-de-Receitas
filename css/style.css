@@ -1,6 +1,6 @@
 /*numero da nossa cor  #f2e0d2*/
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-wood-texture-white-wood-texture-background-picture-image_1465276.jpg');
@@ -10,22 +10,15 @@ body {
 
 header {
   background-color:rgba(255, 255, 255, 0.566);
-  padding: 10px 0 ;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
+  height: auto;
+  justify-content: center;
   display: flex;
   margin: auto;
 }
-main{
-  height: 500px;
-}
-footer{
-  height: 50px;
-  bottom: 0;
-  background-color: #ff910b;
-}
 
-.container-img{
+.container-header{
   width: 90%;
   height: auto;
   margin: auto;
@@ -34,59 +27,22 @@ footer{
   justify-content: space-between;
   align-items: center;
 }
-img{
-  width: 55%;
-}
-.img{
-  background-color: #ff910b;
-  width: 20%;
-  height: auto;
-  
-}
-  /*botao do menu*/
 
-nav{
-  background-color: #c8b9ae;
-  height: auto;
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
+.img{
+  background-image: url('../img/icon/logo_principal.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  padding: 5px;
+  height: 100px;
 }
-  .btn {
-    width: 30%;
-    height: auto;
-    padding: 3%;
-    font-size: 90%;
-    font-family:  Georgia, Times, 'Times New Roman';
-    cursor: pointer;
-    background-color: #ff910b;
-    border: none;
-    border-radius: 5px;
-    transition: all .4s;
-  
-  }
-.btn:hover {
-    border-radius: 5px;
-    transform: translateY(-2px);
-    box-shadow: 0 7px 0 -2px #ffc15c32;
-  }
-.btn:active {
-    transition: all 0.2s;
-    transform: translate(-1px);
-    box-shadow: 0 1px 0 -2px #f2e0d2,
-    0 8px 0 -4px #e7d6c9,
-    0 12px 10px -3px #c8b9ae;
-  }
-a{
-    text-decoration: none;
-    color: #000000;
-  }
-  /*aqui acaba a config do menu*/
-  /*aparti daqui é o codigo da barra de pesquisa */
+
+/*aparti daqui é o codigo da barra de pesquisa */
   .container-input {
-    background-color: #ff910b;
+    background-color: #333;
     position: relative;
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
     
@@ -113,7 +69,44 @@ a{
   }
   /*aqui acaba o codigo da barra de pesquisa*/
 
+  nav{
+    background-color: #333;
+    height: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
 
+  .menu{
+    margin: 0;
+    width: 400px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+  }
+
+  .btn{
+    padding: 2% 0 ;
+    text-align: center;
+    width: 95px;
+    border-radius: 3px;
+    background-color: #ff910b;
+  }
+  
+  .btn:hover{
+    background-color: transparent;
+    border: 2px solid #ff910b;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  /*aqui acaba a config do menu*/
+  
+  /*------------Slides---------------*/
 .container{
   padding: 0%;
   width: 100%;
@@ -123,19 +116,19 @@ a{
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-              rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-              rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-              rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-              rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-              rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-              rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-              rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+  rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+  rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+  rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+  rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+  rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+  rgba(0, 0, 0, 0.09) 0px 32px 16px;
   overflow: hidden;
 }
 .container .slides{
-    width: 500%;
-    height: 100%;
-    display: flex
+  width: 500%;
+  height: 100%;
+  display: flex
 }
 .s1{
   background-image: url('../img/index/image5index.jpeg');
@@ -174,31 +167,31 @@ a{
   background-size: cover;
 }
 .slides .slide{
-    width: 10%;
-    transition: 1.1s;
+  width: 10%;
+  transition: 1.1s;
 }
 .slides input{
-    /* display: none; */
-    position: absolute;
-    visibility: hidden;
+  /* display: none; */
+  position: absolute;
+  visibility: hidden;
 }
 .navigation{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
 }
 .bar{
   backdrop-filter: blur(5px);
 }
 .navigation .bar{
-    width: 50px;
-    height: 15px;
-    border: 2px solid #fff;
-    margin: 0 6px;
-    cursor: pointer;
-    transition: 0.3s;
+  width: 50px;
+  height: 15px;
+  border: 2px solid #fff;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .bar:hover{
     background: #ffffff2b;
@@ -206,33 +199,42 @@ a{
     transition-duration: 500ms;
 }
 #radio1:checked ~ .s1{
-    margin-left: 0%;
+  margin-left: 0%;
 }
 #radio2:checked ~ .s1{
-    margin-left: -20%;
+  margin-left: -20%;
 }
 #radio3:checked ~ .s1{
-    margin-left: -40%;
+  margin-left: -40%;
 }
 #radio4:checked ~ .s1{
     margin-left: -60%;
 }
 #radio5:checked ~ .s1{
-    margin-left: -80%;
+  margin-left: -80%;
 }
 #radio1:checked ~ .navigation .bar1{
     background: #d7c7bb;
-}
-#radio2:checked ~ .navigation .bar2{
+  }
+  #radio2:checked ~ .navigation .bar2{
     background: #d7c7bb;
 }
 #radio3:checked ~ .navigation .bar3{
     background: #d7c7bb;
-}
-#radio4:checked ~ .navigation .bar4{
+  }
+  #radio4:checked ~ .navigation .bar4{
     background: #d7c7bb;
-}
-#radio5:checked ~ .navigation .bar5{
+  }
+  #radio5:checked ~ .navigation .bar5{
     background: #d7c7bb;
-}
-
+  }
+  
+  
+  main{
+    height: auto;
+  }
+  footer{
+    height: 50px;
+    bottom: 0;
+    background-color: #ff910b;
+  }
