@@ -232,7 +232,11 @@ header {
     height: auto;
   }
   footer{
-    height: 50px;
-    bottom: 0;
+    width: 100%;
+    height: auto;
+    position: fixed; 
+    bottom:0;
+    padding: 10px 0;
     background-color: #ff910b;
+    text-align: center;
   }
