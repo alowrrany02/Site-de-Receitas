@@ -16,6 +16,13 @@
   .input{
     width: 60%;
   }
+  .slide{
+    margin-top: 50px;
+    height: 550px;
+  }
+  .slide-container{
+    width: 95%;
+  }
 }
 
 @media (max-width: 650px){
@@ -58,5 +65,16 @@
   nav{
     width: 22%;
   }
+
+  .p{
+    font-size: 20px;
+  }
+  .h2{
+    font-size: 30px;
+  }
   
+  .slide{
+    margin-top: 20px;
+    height: 540px;
+  }
 }
