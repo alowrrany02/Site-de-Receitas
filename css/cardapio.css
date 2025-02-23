@@ -7,7 +7,7 @@ body {
   color: #333;
   text-decoration: none;
 }
-
+/*-----------INICIO HEADER ---------------*/
 header {
   background-color:rgba(255, 255, 255, 0.566);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@ header {
     text-decoration: none;
     color: #000;
   }
-    
+/*-----------FIM HEADER ---------------*/ 
   /*Categorias */
 main{
       width: 100%;

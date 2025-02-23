@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,35 +46,35 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(5 porções)</span></h2>
-                <ul>
-                    <li>500 gramas de camarão médio
+                <ul class="ingre">
+                    <li class="ingre-li">500 gramas de camarão médio
                     </li>
-                    <li> Suco de 1 limão</li>
-                    <li>1/2 xícara de chá de azeite de dendê</li>
-                    <li>2 cebolas médias em fatias</li>
-                    <li>1/2 xícara de chá de coentro</li>
-                    <li>1/2 xícara de chá de salsinha</li>
-                    <li>2 cebolinhas verdes</li>
-                    <li>3 tomates cortados em rodelas</li>
-                    <li>1 xícara de chá de caldo de camarão</li>
-                    <li>200 ml de leite de coco
+                    <li class="ingre-li"> Suco de 1 limão</li>
+                    <li class="ingre-li">1/2 xícara de chá de azeite de dendê</li>
+                    <li class="ingre-li">2 cebolas médias em fatias</li>
+                    <li class="ingre-li">1/2 xícara de chá de coentro</li>
+                    <li class="ingre-li">1/2 xícara de chá de salsinha</li>
+                    <li class="ingre-li">2 cebolinhas verdes</li>
+                    <li class="ingre-li">3 tomates cortados em rodelas</li>
+                    <li class="ingre-li">1 xícara de chá de caldo de camarão</li>
+                    <li class="ingre-li">200 ml de leite de coco
                     </li>
-                    <li>Sal a gosto</li>
+                    <li class="ingre-li">Sal a gosto</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 50min)</span></h2>
                 <ol>
-                    <li> Reúna todos os ingredientes e já deixe o seu camarão temperado com sal e com o caldo de 
+                    <li class="ingre-li"> Reúna todos os ingredientes e já deixe o seu camarão temperado com sal e com o caldo de 
                         limão</li>
-                    <li>Aqueça uma panela grande em fogo médio e coloque o azeite de dendê;</li>
-                    <li>Adicione a cebola em rodelas e refogue;</li>
-                    <li>Coloque o coentro, a cebolinha verde, a salsinha, o tomate e refogue por 15 minutos;</li>
-                    <li>Acrescente o camarão ao refogado e misture;
+                    <li class="ingre-li">Aqueça uma panela grande em fogo médio e coloque o azeite de dendê;</li>
+                    <li class="ingre-li">Adicione a cebola em rodelas e refogue;</li>
+                    <li class="ingre-li">Coloque o coentro, a cebolinha verde, a salsinha, o tomate e refogue por 15 minutos;</li>
+                    <li class="ingre-li">Acrescente o camarão ao refogado e misture;
                     </li>
-                    <li>Tampe a panela e deixe cozinhar por 5 minutos</li>
-                    <li>Despeje o leite de coco, o caldo do camarão e misture</li>
-                    <li>Deixe ferver e estará pronto. Agora é só servir. Bom apetite!</li>
+                    <li class="ingre-li">Tampe a panela e deixe cozinhar por 5 minutos</li>
+                    <li class="ingre-li">Despeje o leite de coco, o caldo do camarão e misture</li>
+                    <li class="ingre-li">Deixe ferver e estará pronto. Agora é só servir. Bom apetite!</li>
                 </ol>
         </div>
         <div class="div_5">
