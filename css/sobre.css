@@ -102,6 +102,7 @@ header {
     text-decoration: none;
     color: #000;
   }
+
   /*Parte das receitas finalmente*/
   main{
     width: 90%;
@@ -128,16 +129,7 @@ header {
     padding-bottom: 3%;
   }
   
-  ul{
-    list-style-type:square ;
-  }
   
-  li{
-    padding: 8px;
-    padding-right: 5%;
-    text-align: justify;
-    font-size: 20px;
-  }
   
   p{
     text-align: justify;
