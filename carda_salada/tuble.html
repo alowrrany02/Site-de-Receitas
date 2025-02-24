@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,31 +46,31 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(4 porções)</span></h2>
-                <ul>
-                    <li>90 gramas de trigo para quibe</li>
-                    <li>90 ml de água quente</li>
-                    <li>1 cebola</li>
-                    <li>2 pepinos</li>
-                    <li>3 tomates</li>
-                    <li>1/2 maço de hortelã</li>
-                    <li>1/2 maço de salsinha</li>
-                    <li>3 colheres de sopa de suco de limão</li>
-                    <li>2 colheres de sopa de azeite</li>
-                    <li>Sal e pimenta-do-reino a gosto</li>
+                <ul class="ingre">
+                    <li class="ingre-li">90 gramas de trigo para quibe</li>
+                    <li class="ingre-li">90 ml de água quente</li>
+                    <li class="ingre-li">1 cebola</li>
+                    <li class="ingre-li">2 pepinos</li>
+                    <li class="ingre-li">3 tomates</li>
+                    <li class="ingre-li">1/2 maço de hortelã</li>
+                    <li class="ingre-li">1/2 maço de salsinha</li>
+                    <li class="ingre-li">3 colheres de sopa de suco de limão</li>
+                    <li class="ingre-li">2 colheres de sopa de azeite</li>
+                    <li class="ingre-li">Sal e pimenta-do-reino a gosto</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 35min)</span></h2>
                 <ol>
-                    <li> Reúna todos os ingredientes;</li>
-                    <li>Em um recipiente, misture o trigo com a água quente e deixe hidratar por 15 
+                    <li class="ingre-li"> Reúna todos os ingredientes;</li>
+                    <li class="ingre-li">Em um recipiente, misture o trigo com a água quente e deixe hidratar por 15 
                         minutos;</li>
-                    <li>Enquanto hidrata, corte em cubinhos a cebola, os pepinos e os tomates;</li>
-                    <li>Pique os maços de hortelã e salsinha;</li>
-                    <li> Junte com o trigo hidratada todos os ingredientes já picados, tempere com o 
+                    <li class="ingre-li">Enquanto hidrata, corte em cubinhos a cebola, os pepinos e os tomates;</li>
+                    <li class="ingre-li">Pique os maços de hortelã e salsinha;</li>
+                    <li class="ingre-li"> Junte com o trigo hidratada todos os ingredientes já picados, tempere com o 
                         suco de limão, o azeite, o sal, a pimenta e misture bem;</li>
-                    <li> Leve para a geladeira até gelar bem;</li>
-                    <li> Agora é só servir. Bom apetite!</li>
+                    <li class="ingre-li"> Leve para a geladeira até gelar bem;</li>
+                    <li class="ingre-li"> Agora é só servir. Bom apetite!</li>
                 </ol>
         </div>
         <div class="div_5">

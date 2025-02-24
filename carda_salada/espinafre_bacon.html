@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,38 +46,38 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(5 porções)</span></h2>
-                <ul>
-                    <li>100 gramas de queijo gorgonzola</li>
-                    <li>Azeite a gosto</li>
-                    <li>1/2 colher de sopa de mostarda Dijon</li>
-                    <li>1 colher de sopa de mel</li>
-                    <li>1 colher de sopa de creme de leite</li>
-                    <li>Folhas de 1 maço de espinafre lavado</li>
-                    <li>50 gramas de bacon em cubinhos pequenos</li>
-                    <li>100 gramas de cogumelos fatiados</li>
-                    <li>Manteiga a gosto</li>
-                    <li>Sal a gosto</li>
-                    <li>8 damascos picados</li>
-                    <li>50 gramas de nozes ou amêndoas tostadas</li>
+                <ul class="ingre">
+                    <li class="ingre-li">100 gramas de queijo gorgonzola</li>
+                    <li class="ingre-li">Azeite a gosto</li>
+                    <li class="ingre-li">1/2 colher de sopa de mostarda Dijon</li>
+                    <li class="ingre-li">1 colher de sopa de mel</li>
+                    <li class="ingre-li">1 colher de sopa de creme de leite</li>
+                    <li class="ingre-li">Folhas de 1 maço de espinafre lavado</li>
+                    <li class="ingre-li">50 gramas de bacon em cubinhos pequenos</li>
+                    <li class="ingre-li">100 gramas de cogumelos fatiados</li>
+                    <li class="ingre-li">Manteiga a gosto</li>
+                    <li class="ingre-li">Sal a gosto</li>
+                    <li class="ingre-li">8 damascos picados</li>
+                    <li class="ingre-li">50 gramas de nozes ou amêndoas tostadas</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 15min)</span></h2>
                 <ol>
-                    <li>Reúna todos os ingredientes;</li>
-                    <li> Em um recipiente, amasse o queijo gorgonzola com o azeite até obter uma 
+                    <li class="ingre-li">Reúna todos os ingredientes;</li>
+                    <li class="ingre-li"> Em um recipiente, amasse o queijo gorgonzola com o azeite até obter uma 
                         pastinha;</li>
-                    <li>Em seguida, adicione mostarda, mel e creme de leite. Mexa tudo para 
+                    <li class="ingre-li">Em seguida, adicione mostarda, mel e creme de leite. Mexa tudo para 
                         incorporar e reserve;</li>
-                    <li> Em uma frigideira, coloque a manteiga e, assim que derreter, acrescente os 
+                    <li class="ingre-li"> Em uma frigideira, coloque a manteiga e, assim que derreter, acrescente os 
                         cogumelos e um pouco de sal. Refogue até ficarem macios e reserve;</li>
-                    <li>Em sequência, frite o bacon até ficar crocante. Reserve;</li>
-                    <li> Em uma tigela, coloque metade das folhas de espinafre;</li>
-                    <li>Depois, espalhe parte do molho de gorgonzola por cima das folhas;</li>
-                    <li>Coloque o restante das folhas de espinafre e do molho, os cogumelos e o 
+                    <li class="ingre-li">Em sequência, frite o bacon até ficar crocante. Reserve;</li>
+                    <li class="ingre-li"> Em uma tigela, coloque metade das folhas de espinafre;</li>
+                    <li class="ingre-li">Depois, espalhe parte do molho de gorgonzola por cima das folhas;</li>
+                    <li class="ingre-li">Coloque o restante das folhas de espinafre e do molho, os cogumelos e o 
                         bacon frito por cima;
                     </li>
-                    <li>Salpique os damascos e as nozes e finalize com mais azeite. Está pronto para 
+                    <li class="ingre-li">Salpique os damascos e as nozes e finalize com mais azeite. Está pronto para 
                         servir, bom apetite!</li>
                 </ol>
         </div>

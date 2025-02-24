@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,41 +46,41 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(4 porções)</span></h2>
-                <ul>
-                    <li>3 fatias grossas de pão toscano (pode substituir por pão italiano)</li>
-                    <li>200 ml de água para molhar o p</li>
-                    <li>2 tomates médios maduros e lavados (380 gramas)</li>
-                    <li>1 cebola roxa (130 gramas)</li>
-                    <li>600 ml de água para deixar as rodelas de molho</li>
-                    <li>1 pepino comum lavado (240 gramas)</li>
-                    <li>6 folhas grandes de manjericão lavadas (se as folhas forem pequenas, 1 ramo de 
+                <ul class="ingre">
+                    <li class="ingre-li">3 fatias grossas de pão toscano (pode substituir por pão italiano)</li>
+                    <li class="ingre-li">200 ml de água para molhar o p</li>
+                    <li class="ingre-li">2 tomates médios maduros e lavados (380 gramas)</li>
+                    <li class="ingre-li">1 cebola roxa (130 gramas)</li>
+                    <li class="ingre-li">600 ml de água para deixar as rodelas de molho</li>
+                    <li class="ingre-li">1 pepino comum lavado (240 gramas)</li>
+                    <li class="ingre-li">6 folhas grandes de manjericão lavadas (se as folhas forem pequenas, 1 ramo de 
                         manjericão é suficiente)</li>
-                    <li>100 ml de vinagre de vinho branco</li>
-                    <li>4 colheres de sopa de azeite de oliva (ou a gosto)</li>
-                    <li>1 colher de café de sal (ou a gosto)</li>
-                    <li>1/2 colher de café de pimenta-do-reino (ou a gosto)</li>
+                    <li class="ingre-li">100 ml de vinagre de vinho branco</li>
+                    <li class="ingre-li">4 colheres de sopa de azeite de oliva (ou a gosto)</li>
+                    <li class="ingre-li">1 colher de café de sal (ou a gosto)</li>
+                    <li class="ingre-li">1/2 colher de café de pimenta-do-reino (ou a gosto)</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>(30min)</span></h2>
                 <ol>
-                    <li> Reúna os ingredientes para fazer a clássica salada italiana, também chamada 
+                    <li class="ingre-li"> Reúna os ingredientes para fazer a clássica salada italiana, também chamada 
                         de panzanella;</li>
-                    <li>Em uma tábua, descasque e corte a cebola em rodelas nem muito finas e 
+                    <li class="ingre-li">Em uma tábua, descasque e corte a cebola em rodelas nem muito finas e 
                         nem muito grossas;</li>
-                    <li>Em uma tigela média, coloque a água e 1 colher de vinagre de vinho. Utilize a 
+                    <li class="ingre-li">Em uma tigela média, coloque a água e 1 colher de vinagre de vinho. Utilize a 
                         ponta dos dedos para tirar cada camada da cebola. Deixe de molho por cerca de 
                         30 minutos para o gosto forte ficar suavizado (se preferir, você também pode 
                         pular esse passo, porém a sua salada ficará mais intensa);</li>
-                    <li>Em outro recipiente, coloque 250 ml de água e 1 colher de vinho branco. 
+                    <li class="ingre-li">Em outro recipiente, coloque 250 ml de água e 1 colher de vinho branco. 
                         Misture e pincele a mistura por cima das fatias de pães para deixá-los úmidos;</li>
-                    <li>Na tábua limpa, corte os tomates em cubos médios. O tomate deve estar 
+                    <li class="ingre-li">Na tábua limpa, corte os tomates em cubos médios. O tomate deve estar 
                         maduro, mas não ao ponto de molho de tomate. Caso não goste, você pode 
                         retirar as sementes da fruta, mas não é necessário. Reserve. Para cortar o 
                         pepino, retire algumas tiras da casca com a faca;</li>
-                    <li>Descarte a água do molho das rodelas de cebola e junte os tomates picados 
+                    <li class="ingre-li">Descarte a água do molho das rodelas de cebola e junte os tomates picados 
                         com os pepinos em rodelas. Fatie as folhas de manjericão e coloque na salada;</li>
-                    <li>Despedace o pão em pedacinhos grosseiros, junte na salada. Tempere com 
+                    <li class="ingre-li">Despedace o pão em pedacinhos grosseiros, junte na salada. Tempere com 
                         azeite de oliva, pimenta-do-reino e sal. Misture com duas colheres e leve para a 
                         geladeira por cerca de 30 minutos;</li>
                 </ol>

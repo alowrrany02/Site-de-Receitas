@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,46 +46,46 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(7 porções)</span></h2>
-                <ul>
-                    <li>500 gramas de macarrão parafuso</li>
-                    <li>Água para cozinhar o macarrão</li>
-                    <li>1 cebola picada</li>
-                    <li>1 cenoura ralada</li>
-                    <li>200 gramas de peito de peru defumado cortado em cubinhos</li>
-                    <li>200 gramas de mussarela cortada em cubinhos</li>
-                    <li>1 tomate picado</li>
-                    <li>170 gramas de milho cozido</li>
-                    <li>170 gramas de ervilha cozida</li>
-                    <li>Salsinha picada e folhas de manjericão a gosto</li>
-                    <li>Sal e pimenta-do-reino a gosto</li>
-                    <li>Suco de 1/2 limão</li>
-                    <li>200 gramas de creme de leite</li>
-                    <li>5 colheres de sopa de maionese</li>
+                <ul class="ingre">
+                    <li class="ingre-li">500 gramas de macarrão parafuso</li>
+                    <li class="ingre-li">Água para cozinhar o macarrão</li>
+                    <li class="ingre-li">1 cebola picada</li>
+                    <li class="ingre-li">1 cenoura ralada</li>
+                    <li class="ingre-li">200 gramas de peito de peru defumado cortado em cubinhos</li>
+                    <li class="ingre-li">200 gramas de mussarela cortada em cubinhos</li>
+                    <li class="ingre-li">1 tomate picado</li>
+                    <li class="ingre-li">170 gramas de milho cozido</li>
+                    <li class="ingre-li">170 gramas de ervilha cozida</li>
+                    <li class="ingre-li">Salsinha picada e folhas de manjericão a gosto</li>
+                    <li class="ingre-li">Sal e pimenta-do-reino a gosto</li>
+                    <li class="ingre-li">Suco de 1/2 limão</li>
+                    <li class="ingre-li">200 gramas de creme de leite</li>
+                    <li class="ingre-li">5 colheres de sopa de maionese</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 40 min)</span></h2>
                 <ol>
                    
-                    <li>Utilizamos milho fresco e ervilhas congeladas, entretanto, se preferir, use de 
+                    <li class="ingre-li">Utilizamos milho fresco e ervilhas congeladas, entretanto, se preferir, use de 
                         caixinha ou latinha. É possível substituir o peito de peru defumado por presunto. 
                         Retire as sementes do tomate e pique os ingredientes em tamanhos 
                         proporcionais;</li>
-                    <li> Em uma panela grande e funda, coloque água (o suficiente para cobrir 500 
+                    <li class="ingre-li"> Em uma panela grande e funda, coloque água (o suficiente para cobrir 500 
                         gramas de macarrão) e leve para ferver em fogo alto;</li>
-                    <li>Quando a água pegar fervura, adicione uma pitada de sal. Despeje o macarrão 
+                    <li class="ingre-li">Quando a água pegar fervura, adicione uma pitada de sal. Despeje o macarrão 
                         para cozinhar, seguindo as indicações da embalagem. O ponto al dente é o mais 
                         indicado para saladas, pois equilibra com os outros ingredientes;</li>
-                    <li>Quando o macarrão chegar ao ponto desejado, descarte a água e coloque-o 
+                    <li class="ingre-li">Quando o macarrão chegar ao ponto desejado, descarte a água e coloque-o 
                         em uma tigela grande o suficiente para manusear todos os ingredientes com 
                         facilidade;</li>
-                    <li>Acrescente a cebola picada, a cenoura ralada, o peito de peru em cubinhos, a 
+                    <li class="ingre-li">Acrescente a cebola picada, a cenoura ralada, o peito de peru em cubinhos, a 
                         mussarela em cubinhos, o tomate em cubinhos e sem semente, o milho, a 
                         ervilha, a salsinha, o manjericão, o sal e a pimenta-do-reino. Com uma colher, 
                         misture para incorporar;</li>
-                    <li>Adicione o suco de limão, o creme de leite, a maionese e misture novamente, 
+                    <li class="ingre-li">Adicione o suco de limão, o creme de leite, a maionese e misture novamente, 
                         com cuidado, para não despedaçar o macarrão;</li>
-                    <li>Deixe na geladeira por 30 minutos antes de servir.</li>
+                    <li class="ingre-li">Deixe na geladeira por 30 minutos antes de servir.</li>
                 </ol>
         </div>
         <div class="div_5">

@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,37 +46,37 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(2 a 3 porções)</span></h2>
-                <ul>
-                    <li>1 a 2 filés de peito de frango</li>
-                    <li>Sal e pimenta-do-reino a gosto</li>
-                    <li>3 colheres de sopa de suco de limão</li>
-                    <li>1 a 2 filés de anchova/aliche</li>
-                    <li>1 dente de alho bem picadinho</li>
-                    <li>40 gramas de queijo parmesão ralado grosso</li>
-                    <li>2 colheres de sopa de azeite de oliva</li>
-                    <li>6 colheres de sopa de maionese</li>
-                    <li>Cerca de um pé de alface-americana ou romana</li>
-                    <li>1/2 xícara de chá de croutons</li>
+                <ul class="ingre">
+                    <li class="ingre-li">1 a 2 filés de peito de frango</li>
+                    <li class="ingre-li">Sal e pimenta-do-reino a gosto</li>
+                    <li class="ingre-li">3 colheres de sopa de suco de limão</li>
+                    <li class="ingre-li">1 a 2 filés de anchova/aliche</li>
+                    <li class="ingre-li">1 dente de alho bem picadinho</li>
+                    <li class="ingre-li">40 gramas de queijo parmesão ralado grosso</li>
+                    <li class="ingre-li">2 colheres de sopa de azeite de oliva</li>
+                    <li class="ingre-li">6 colheres de sopa de maionese</li>
+                    <li class="ingre-li">Cerca de um pé de alface-americana ou romana</li>
+                    <li class="ingre-li">1/2 xícara de chá de croutons</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 40min)</span></h2>
                 <ol>
-                    <li>Reúna todos os ingredientes;</li>
-                    <li> Em um recipiente, coloque o frango e tempere com sal, pimenta, metade do 
+                    <li class="ingre-li">Reúna todos os ingredientes;</li>
+                    <li class="ingre-li"> Em um recipiente, coloque o frango e tempere com sal, pimenta, metade do 
                         suco de limão. Deixe marinar por alguns minutos;</li>
-                    <li>Pique o filé de anchova bem picadinho, transfira para um recipiente, adicione 
+                    <li class="ingre-li">Pique o filé de anchova bem picadinho, transfira para um recipiente, adicione 
                         o alho, metade do parmesão ralado, metade do azeite, o restante do suco de 
                         limão, a maionese, o sal, a pimenta e misture bem até formar um molho. 
                         Reserve na geladeira;</li>
-                    <li>Em uma frigideira, esquente o restante do azeite e grelhe o frango dos dois 
+                    <li class="ingre-li">Em uma frigideira, esquente o restante do azeite e grelhe o frango dos dois 
                         lados;</li>
-                    <li>Corte o filé em tirinhas e dê mais uma leve dourada. Reserve;</li>
-                    <li> Higienize a alface, vá rasgando as folhas grosseiramente e disponha em uma 
+                    <li class="ingre-li">Corte o filé em tirinhas e dê mais uma leve dourada. Reserve;</li>
+                    <li class="ingre-li"> Higienize a alface, vá rasgando as folhas grosseiramente e disponha em uma 
                         travessa;</li>
-                    <li>Adicione o molho, misture bem e finalize com o parmesão, as tirinhas de 
+                    <li class="ingre-li">Adicione o molho, misture bem e finalize com o parmesão, as tirinhas de 
                         frango e os croutons;</li>
-                    <li> Agora é só servir. Bom apetite!
+                    <li class="ingre-li"> Agora é só servir. Bom apetite!
                     </li>
                 </ol>
         </div>
