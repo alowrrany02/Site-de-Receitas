@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,25 +46,25 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>( 10 unidades )</span></h2>
-                <ul>
-                    <li>1 pacote de mandioca (cerca de 800 gramas a 1kg)</li>
-                    <li>1 vidro de leite de coco</li>
-                    <li>50 gramas de coco ralado</li>
-                    <li> 2 colheres de sopa de manteiga</li>
-                    <li>3 ovos</li>
-                    <li>1 xícara de chá de açúcar</li>
-                    <li>1 colher de sopa de fermento químico em pó</li>
+                <ul class="ingre">
+                    <li class="ingre-li">1 pacote de mandioca (cerca de 800 gramas a 1kg)</li>
+                    <li class="ingre-li">1 vidro de leite de coco</li>
+                    <li class="ingre-li">50 gramas de coco ralado</li>
+                    <li class="ingre-li"> 2 colheres de sopa de manteiga</li>
+                    <li class="ingre-li">3 ovos</li>
+                    <li class="ingre-li">1 xícara de chá de açúcar</li>
+                    <li class="ingre-li">1 colher de sopa de fermento químico em pó</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 65 minutos )</span></h2>
                 <ol>
-                    <li> Reúna todos os ingredientes;</li>
-                    <li>Rale a mandioca crua, esprema para retirar o excesso de água e reserve;</li>
-                    <li>  Em uma vasilha, coloque os ovos, o açúcar e bata bem com um fouet;</li>
-                    <li>Acrescente a mandioca, o leite de coco, o coco ralado, a manteiga, o fermento em pó e misture até ficar homogêneo;</li>
-                    <li>Transfira para uma assadeira, espete alguns palitos de churrasco (cortados) na parte superior da carne para que ela não grude no papel alumínio;</li>
-                    <li> Sirva e bom apetite!</li>
+                    <li class="ingre-li"> Reúna todos os ingredientes;</li>
+                    <li class="ingre-li">Rale a mandioca crua, esprema para retirar o excesso de água e reserve;</li>
+                    <li class="ingre-li">  Em uma vasilha, coloque os ovos, o açúcar e bata bem com um fouet;</li>
+                    <li class="ingre-li">Acrescente a mandioca, o leite de coco, o coco ralado, a manteiga, o fermento em pó e misture até ficar homogêneo;</li>
+                    <li class="ingre-li">Transfira para uma assadeira, espete alguns palitos de churrasco (cortados) na parte superior da carne para que ela não grude no papel alumínio;</li>
+                    <li class="ingre-li"> Sirva e bom apetite!</li>
                 </ol>
         </div>
         <div class="div_5">
