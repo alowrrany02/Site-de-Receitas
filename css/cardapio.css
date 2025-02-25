@@ -121,7 +121,7 @@ main{
       padding: .7em;
       margin: auto;
       position:absolute;
-      top: 62%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
   
@@ -569,4 +569,14 @@ main{
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  position: fixed; 
+  bottom:0;
+  padding: 10px 0;
+  background-color: #ff910b;
+  text-align: center;
 }

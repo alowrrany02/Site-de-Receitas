@@ -276,3 +276,13 @@ header {
     }
   
   }
+
+  footer{
+    width: 100%;
+    height: auto;
+    
+   
+    padding: 10px 0;
+    background-color: #ff910b;
+    text-align: center;
+  }

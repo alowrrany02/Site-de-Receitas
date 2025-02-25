@@ -1036,3 +1036,12 @@ p{
   font-size: 20px;
 }
 
+footer{
+  width: 100%;
+  height: auto;
+  position: fixed; 
+  bottom:0;
+  padding: 10px 0;
+  background-color: #ff910b;
+  text-align: center;
+}
