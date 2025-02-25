@@ -10,26 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="container-img">
-            <img src="../img/icon/logo_principal.png" alt="Logo Rei da Cozinha">
-        <!--html da pesquisa-->
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
-            </svg>
-        </div>
-        <nav>
+        <div class="container-header"> 
+            <!--logo-->
+            <div onclick="imgclic()" class="img"></div>
+            <!--container da pesquisa-->
+            <div class="container-input">
+                <input type="text" placeholder="Pesquisar..." name="text" class="input">
+                <svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                </svg>
+            </div>
             <!--html dos botoes do menu aqui-->
-            <button class="btn">
-                <a href="../index.html">Início</a>
-            </button>
-            <button class="btn"><a href="../categorias.html">Categorias</a>
-            </button>
-            <button class="btn"><a href="sobre.html">Sobre</a>
-            </button>
-        </nav>
-    </div>
+            <nav>
+                <ul class="menu">
+                    <a class="btn" href="../index.html">Início
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../categorias.html">Categorias
+                        <li></li>
+                    </a>
+                    <a class="btn" href="../sobre.html">Sobre
+                        <li></li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main >
         <div class="div_1">
@@ -41,40 +46,40 @@
         </div>
         <div class="div_2">
             <h2>Ingredientes: <span>(6 porções)</span></h2>
-                <ul>
-                    <li>6 salsichas</li>
-                    <li>8 a 10 fatias de pães (sem casca)</li>
-                    <li>300 gramas de batata inglesa</li>
-                    <li>150 ml de leite integral</li>
-                    <li>Sal a gosto</li>
-                    <li>340 gramas de molho de tomate (1 sachê)</li>
-                    <li>200 gramas de requeijão</li>
-                    <li>85 gramas ou 1/2 lata de milho (sem a conserva)</li>
-                    <li>150 gramas de mussarela</li>
-                    <li>Batata palha a gosto</li>
+                <ul class="ingre">
+                    <li class="ingre-li">6 salsichas</li>
+                    <li class="ingre-li">8 a 10 fatias de pães (sem casca)</li>
+                    <li class="ingre-li">300 gramas de batata inglesa</li>
+                    <li class="ingre-li">150 ml de leite integral</li>
+                    <li class="ingre-li">Sal a gosto</li>
+                    <li class="ingre-li">340 gramas de molho de tomate (1 sachê)</li>
+                    <li class="ingre-li">200 gramas de requeijão</li>
+                    <li class="ingre-li">85 gramas ou 1/2 lata de milho (sem a conserva)</li>
+                    <li class="ingre-li">150 gramas de mussarela</li>
+                    <li class="ingre-li">Batata palha a gosto</li>
                 </ul>
         </div>
         <div class="div_3">
             <h2>Modo de Preparo: <span>( 50min)</span></h2>
                 <ol>
-                   <li> Reúna os ingredientes do cachorro-quente de forno fácil;</li>
-                   <li>Coloque as salsichas em água fervente e deixe ferver por cerca de 2 minutos;</li>
-                   <li>Escorra a água e corte cada salsicha ao meio no sentido do comprimento. Reserve;</li>
-                   <li>Passe um rolo nas fatias de pães para deixá-los compactos e reserve;</li>
-                   <li> Em uma panela com água e sal, coloque as batatas para cozinharem e deixe até 
+                   <li class="ingre-li"> Reúna os ingredientes do cachorro-quente de forno fácil;</li>
+                   <li class="ingre-li">Coloque as salsichas em água fervente e deixe ferver por cerca de 2 minutos;</li>
+                   <li class="ingre-li">Escorra a água e corte cada salsicha ao meio no sentido do comprimento. Reserve;</li>
+                   <li class="ingre-li">Passe um rolo nas fatias de pães para deixá-los compactos e reserve;</li>
+                   <li class="ingre-li"> Em uma panela com água e sal, coloque as batatas para cozinharem e deixe até 
                     ficarem bem macias;</li>
-                   <li>Assim que as batatas cozinharem, escorra a água e as transfira para um processador 
+                   <li class="ingre-li">Assim que as batatas cozinharem, escorra a água e as transfira para um processador 
                     (ou liquidificador) adicionando leite e, se necessário, sal. Bata até formar um purê e 
                     reserve;</li>
-                   <li> Em um refratário, forre o fundo com molho de tomate e cubra com fatias de pão;</li>
-                   <li> Passe molho de tomate por cima dos pães, espalhando bem e coloque as fatias de 
+                   <li class="ingre-li"> Em um refratário, forre o fundo com molho de tomate e cubra com fatias de pão;</li>
+                   <li class="ingre-li"> Passe molho de tomate por cima dos pães, espalhando bem e coloque as fatias de 
                     salsichas preenchendo todo o espaço;</li>
-                   <li>Coloque o requeijão por cima, espalhe bem e salpique milho;</li>
-                   <li>Faça mais uma camada de pães, preenchendo toda forma;</li>
-                   <li>Passe o purê por cima, nivelando bem e finalize com uma camada de mussarela 
+                   <li class="ingre-li">Coloque o requeijão por cima, espalhe bem e salpique milho;</li>
+                   <li class="ingre-li">Faça mais uma camada de pães, preenchendo toda forma;</li>
+                   <li class="ingre-li">Passe o purê por cima, nivelando bem e finalize com uma camada de mussarela 
                     ralada;</li>
-                   <li> Leve ao forno preaquecido a 180ºC por cerca de 30 minutos ou até gratinar;</li>
-                   <li>Salpique batata palha e sirva. Bom apetite!</li>
+                   <li class="ingre-li"> Leve ao forno preaquecido a 180ºC por cerca de 30 minutos ou até gratinar;</li>
+                   <li class="ingre-li">Salpique batata palha e sirva. Bom apetite!</li>
                 </ol>
         </div>
         <div class="div_5">
